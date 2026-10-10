@@ -1,0 +1,12 @@
+@layer theme.blocks {
+.table th {
+  font-size: 0.875rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+  border-bottom: 2px solid var(--color-fg);
+}
+
+.table.striped tbody tr:nth-child(odd) { background: #f7f7f7; }
+
+}

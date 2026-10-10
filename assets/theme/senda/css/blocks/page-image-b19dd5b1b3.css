@@ -1,0 +1,4 @@
+@layer theme.blocks {
+.page-image__image { aspect-ratio: 16 / 6; }
+
+}

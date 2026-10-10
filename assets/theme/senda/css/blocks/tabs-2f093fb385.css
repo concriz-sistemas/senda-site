@@ -1,0 +1,20 @@
+@layer theme.blocks {
+.tabs { margin-top: 0; }
+
+.tabs__list { gap: 0.25rem; border-bottom: 0; margin-bottom: var(--space); }
+
+.tabs__tab {
+  padding: 0.5rem 0.75rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  border: 0;
+  margin: 0;
+}
+
+.tabs__tab[aria-selected="true"] { background: var(--color-fg); color: var(--color-bg); }
+
+.tabs__label { font-size: 1.5rem; }
+
+}

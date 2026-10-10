@@ -1,0 +1,14 @@
+@layer theme.blocks {
+.cta {
+  background: var(--color-surface);
+  padding: 2rem;
+  gap: 1.5rem;
+}
+
+.cta > :first-child {
+  font-family: var(--font-heading);
+  font-size: 1.5rem;
+  line-height: 1.4;
+}
+
+}

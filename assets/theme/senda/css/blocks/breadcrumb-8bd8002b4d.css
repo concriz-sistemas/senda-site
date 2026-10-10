@@ -1,0 +1,26 @@
+@layer theme.blocks {
+.breadcrumb { padding-block: 1.75rem 1.25rem; }
+
+.breadcrumb__list {
+  font-size: 0.875rem;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  margin: 0;
+  gap: 0 1rem;
+}
+
+.breadcrumb__link { font-weight: 600; text-decoration: none; }
+.breadcrumb__link:hover { text-decoration: underline; text-decoration-color: var(--color-accent); }
+
+.breadcrumb__item + .breadcrumb__item::before {
+  content: "";
+  display: inline-block;
+  width: 0;
+  height: 0;
+  margin-inline-end: 1rem;
+  border-block: 0.3rem solid transparent;
+  border-inline-start: 0.5rem solid var(--color-accent);
+  vertical-align: 0.05rem;
+}
+
+}

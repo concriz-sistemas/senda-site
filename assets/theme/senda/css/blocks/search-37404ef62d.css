@@ -1,0 +1,50 @@
+@layer theme.blocks {
+.search--compact { position: relative; margin: 0; }
+
+.search--compact .search__form { flex-wrap: nowrap; gap: 0; align-items: center; }
+
+.search--compact input[type="search"] {
+  flex: 0 1 11rem;
+  min-width: 0;
+  padding: 0.45rem 0.75rem;
+  border: 0;
+  border-radius: 999px;
+  background: var(--color-surface);
+  font-size: 0.875rem;
+}
+
+.search--compact .button {
+  width: 2.25rem;
+  height: 2.25rem;
+  padding: 0;
+  overflow: hidden;
+  color: transparent;
+  background: none;
+  border: 0;
+}
+
+.search--compact .button::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: var(--color-fg);
+  mask: url("/assets/theme/senda/images/search-e233056e25.svg") center / 1.25rem no-repeat;
+}
+
+.search--compact .search__status,
+.search--compact .search__results {
+  position: absolute;
+  right: 0;
+  width: min(24rem, calc(100vw - 2rem));
+  background: var(--color-bg);
+  z-index: 20;
+}
+
+.search--compact .search__status { top: calc(100% + 0.5rem); margin: 0; padding: 0.5rem 1rem 0; }
+.search--compact .search__results { top: calc(100% + 2.25rem); margin: 0; padding: 0 1rem 0.5rem; box-shadow: 0 0.5rem 1rem rgb(0 0 0 / 0.12); }
+
+.search--compact .search__status:empty,
+.search--compact .search__results:empty { display: none; }
+
+}

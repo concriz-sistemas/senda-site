@@ -1,0 +1,5 @@
+@layer theme.templates {
+/* the facts column and the tabs start on the same line */
+.template-adventure .region-main { padding-top: 0; }
+
+}
