@@ -1,0 +1,56 @@
+@layer theme.blocks {
+.profile__photo { width: 12rem; background: var(--color-surface); }
+
+.profile__initials { font-family: var(--font-heading); color: var(--color-fg); }
+
+.profile__name { font-size: 1.5rem; }
+
+.profile__roles { color: var(--color-muted); font-weight: 600; letter-spacing: 0.05em; }
+
+.profile__link {
+  display: inline-block;
+  width: 2.25rem;
+  height: 2.25rem;
+  overflow: hidden;
+  color: transparent;
+}
+
+.profile__link[data-network]::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: var(--color-fg);
+  mask: center / 1.25rem no-repeat;
+}
+
+.profile__link[data-network="instagram"]::before { mask-image: url("../../images/instagram-7666254562.svg"); }
+.profile__link[data-network="facebook"]::before { mask-image: url("../../images/facebook-0e7aa788c8.svg"); }
+.profile__link[data-network="x"]::before { mask-image: url("../../images/x-85285ea6cf.svg"); }
+.profile__link[data-network="linkedin"]::before { mask-image: url("../../images/linkedin-60c73a57e8.svg"); }
+
+.profile__link:not([data-network]) { width: auto; height: auto; color: inherit; }
+
+.profiles { margin-block: var(--space-lg) calc(var(--space-lg) * 1.5); }
+
+.page-author {
+  border-top: 1px solid var(--color-line);
+  padding-top: var(--space-lg);
+}
+
+.page-author .profile__name::before {
+  content: "";
+  display: block;
+  width: 3rem;
+  height: 4px;
+  margin-bottom: 0.5rem;
+  background: var(--color-accent);
+}
+
+.byline {
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  margin-top: -0.5rem;
+}
+
+}

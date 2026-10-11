@@ -1,0 +1,11 @@
+@layer theme.blocks {
+.title--underline::after {
+  content: "";
+  display: block;
+  width: 4.5rem;
+  height: 3px;
+  margin-top: 0.5rem;
+  background: var(--color-accent);
+}
+
+}

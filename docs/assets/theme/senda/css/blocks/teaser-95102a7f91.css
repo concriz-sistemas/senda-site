@@ -1,0 +1,45 @@
+@layer theme.blocks {
+.teaser { margin: 0 0 var(--space-lg); gap: 0; }
+
+.teaser__media img { border-radius: 0; width: 100%; object-fit: cover; }
+
+.teaser__body { position: relative; padding: 1.5rem 0; }
+
+.teaser__pretitle {
+  color: var(--color-muted);
+  font-size: 0.875rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+}
+
+.teaser__title { font-family: var(--font-heading); font-weight: 400; margin: 0 0 0.5rem; }
+.teaser__title a { text-decoration: none; }
+.teaser__text p { line-height: 1.75; }
+
+/* hero and wide: a white panel overlapping the bottom of a wide photo */
+.teaser--hero .teaser__media img { aspect-ratio: 16 / 7; }
+.teaser--wide .teaser__media img { aspect-ratio: 21 / 8; }
+
+@container (min-width: 46rem) {
+  .teaser--hero:has(.teaser__media) .teaser__body,
+  .teaser--wide:has(.teaser__media) .teaser__body {
+    background: var(--color-bg);
+    padding: 1.5rem 2rem;
+    margin: -6rem 15% 0 10%;
+  }
+
+  .teaser--featured {
+    grid-template-columns: 2fr 1fr;
+    background: var(--color-surface);
+  }
+
+  .teaser--featured .teaser__media img { height: 100%; aspect-ratio: auto; }
+  .teaser--featured .teaser__body { background: none; padding: 2.5rem 2rem; align-self: center; }
+}
+
+/* a wide teaser in the content column reaches out to the wide width */
+.region-main .teaser--wide {
+  margin-inline: calc((100% - var(--wide-max)) / 2);
+}
+
+}

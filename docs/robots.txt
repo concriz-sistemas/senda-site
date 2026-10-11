@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://concriz-sistemas.github.io/senda-site/sitemap.xml

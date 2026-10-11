@@ -1,0 +1,35 @@
+@layer theme.blocks {
+.list-pages__filter {
+  justify-content: flex-start;
+  gap: 0.25rem;
+  margin-block: var(--space-lg) var(--space);
+}
+
+.list-pages__filter-button {
+  border: 0;
+  background: none;
+  padding: 0.6rem 1rem;
+  font-size: 0.875rem;
+  text-transform: uppercase;
+}
+
+.list-pages__filter-button[aria-pressed="true"] {
+  background: var(--color-fg);
+  color: var(--color-bg);
+}
+
+.list-pages__filter-button:focus-visible { outline: 2px solid var(--color-fg); outline-offset: 2px; }
+
+/* the count is for screen readers only, as in the reference */
+.list-pages__status {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+}
+
+.list-pages__item[hidden] { display: none; }
+
+}
