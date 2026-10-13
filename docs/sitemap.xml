@@ -1,55 +1,171 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://concriz-sistemas.github.io/senda-site/all-trips/</loc>
+    <lastmod>2026-10-13</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://concriz-sistemas.github.io/senda-site/all-trips/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://concriz-sistemas.github.io/senda-site/pt-br/all-trips/"/>
+  </url>
+  <url>
+    <loc>https://concriz-sistemas.github.io/senda-site/pt-br/all-trips/</loc>
+    <lastmod>2026-10-13</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://concriz-sistemas.github.io/senda-site/all-trips/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://concriz-sistemas.github.io/senda-site/pt-br/all-trips/"/>
+  </url>
+  <url>
+    <loc>https://concriz-sistemas.github.io/senda-site/pt-br/faqs/</loc>
+    <lastmod>2026-10-13</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://concriz-sistemas.github.io/senda-site/faqs/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://concriz-sistemas.github.io/senda-site/pt-br/faqs/"/>
+  </url>
+  <url>
+    <loc>https://concriz-sistemas.github.io/senda-site/pt-br/about-us/</loc>
+    <lastmod>2026-10-13</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://concriz-sistemas.github.io/senda-site/about-us/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://concriz-sistemas.github.io/senda-site/pt-br/about-us/"/>
+  </url>
+  <url>
+    <loc>https://concriz-sistemas.github.io/senda-site/pt-br/</loc>
+    <lastmod>2026-10-13</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://concriz-sistemas.github.io/senda-site/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://concriz-sistemas.github.io/senda-site/pt-br/"/>
+  </url>
+  <url>
+    <loc>https://concriz-sistemas.github.io/senda-site/pt-br/magazine/city-skate-guide/</loc>
+    <lastmod>2026-10-13</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://concriz-sistemas.github.io/senda-site/magazine/city-skate-guide/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://concriz-sistemas.github.io/senda-site/pt-br/magazine/city-skate-guide/"/>
+  </url>
+  <url>
+    <loc>https://concriz-sistemas.github.io/senda-site/pt-br/magazine/desert-camping/</loc>
+    <lastmod>2026-10-13</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://concriz-sistemas.github.io/senda-site/magazine/desert-camping/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://concriz-sistemas.github.io/senda-site/pt-br/magazine/desert-camping/"/>
+  </url>
+  <url>
+    <loc>https://concriz-sistemas.github.io/senda-site/pt-br/magazine/ski-touring-basics/</loc>
+    <lastmod>2026-10-13</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://concriz-sistemas.github.io/senda-site/magazine/ski-touring-basics/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://concriz-sistemas.github.io/senda-site/pt-br/magazine/ski-touring-basics/"/>
+  </url>
+  <url>
+    <loc>https://concriz-sistemas.github.io/senda-site/pt-br/magazine/surfing-the-cold-north/</loc>
+    <lastmod>2026-10-13</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://concriz-sistemas.github.io/senda-site/magazine/surfing-the-cold-north/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://concriz-sistemas.github.io/senda-site/pt-br/magazine/surfing-the-cold-north/"/>
+  </url>
+  <url>
+    <loc>https://concriz-sistemas.github.io/senda-site/pt-br/magazine/</loc>
+    <lastmod>2026-10-13</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://concriz-sistemas.github.io/senda-site/magazine/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://concriz-sistemas.github.io/senda-site/pt-br/magazine/"/>
+  </url>
+  <url>
+    <loc>https://concriz-sistemas.github.io/senda-site/pt-br/adventures/climbing-new-zealand/</loc>
+    <lastmod>2026-10-13</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://concriz-sistemas.github.io/senda-site/adventures/climbing-new-zealand/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://concriz-sistemas.github.io/senda-site/pt-br/adventures/climbing-new-zealand/"/>
+  </url>
+  <url>
+    <loc>https://concriz-sistemas.github.io/senda-site/pt-br/adventures/coastal-cycling/</loc>
+    <lastmod>2026-10-13</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://concriz-sistemas.github.io/senda-site/adventures/coastal-cycling/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://concriz-sistemas.github.io/senda-site/pt-br/adventures/coastal-cycling/"/>
+  </url>
+  <url>
+    <loc>https://concriz-sistemas.github.io/senda-site/pt-br/adventures/forest-mountain-biking/</loc>
+    <lastmod>2026-10-13</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://concriz-sistemas.github.io/senda-site/adventures/forest-mountain-biking/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://concriz-sistemas.github.io/senda-site/pt-br/adventures/forest-mountain-biking/"/>
+  </url>
+  <url>
+    <loc>https://concriz-sistemas.github.io/senda-site/pt-br/adventures/alpine-backpacking/</loc>
+    <lastmod>2026-10-13</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://concriz-sistemas.github.io/senda-site/adventures/alpine-backpacking/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://concriz-sistemas.github.io/senda-site/pt-br/adventures/alpine-backpacking/"/>
+  </url>
+  <url>
+    <loc>https://concriz-sistemas.github.io/senda-site/pt-br/adventures/</loc>
+    <lastmod>2026-10-13</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://concriz-sistemas.github.io/senda-site/adventures/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://concriz-sistemas.github.io/senda-site/pt-br/adventures/"/>
+  </url>
   <url>
     <loc>https://concriz-sistemas.github.io/senda-site/</loc>
     <lastmod>2026-10-10</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://concriz-sistemas.github.io/senda-site/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://concriz-sistemas.github.io/senda-site/pt-br/"/>
   </url>
   <url>
     <loc>https://concriz-sistemas.github.io/senda-site/faqs/</loc>
     <lastmod>2026-10-10</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://concriz-sistemas.github.io/senda-site/faqs/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://concriz-sistemas.github.io/senda-site/pt-br/faqs/"/>
   </url>
   <url>
     <loc>https://concriz-sistemas.github.io/senda-site/about-us/</loc>
     <lastmod>2026-10-10</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://concriz-sistemas.github.io/senda-site/about-us/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://concriz-sistemas.github.io/senda-site/pt-br/about-us/"/>
   </url>
   <url>
     <loc>https://concriz-sistemas.github.io/senda-site/adventures/alpine-backpacking/</loc>
     <lastmod>2026-10-10</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://concriz-sistemas.github.io/senda-site/adventures/alpine-backpacking/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://concriz-sistemas.github.io/senda-site/pt-br/adventures/alpine-backpacking/"/>
   </url>
   <url>
     <loc>https://concriz-sistemas.github.io/senda-site/adventures/forest-mountain-biking/</loc>
     <lastmod>2026-10-10</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://concriz-sistemas.github.io/senda-site/adventures/forest-mountain-biking/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://concriz-sistemas.github.io/senda-site/pt-br/adventures/forest-mountain-biking/"/>
   </url>
   <url>
     <loc>https://concriz-sistemas.github.io/senda-site/adventures/coastal-cycling/</loc>
     <lastmod>2026-10-10</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://concriz-sistemas.github.io/senda-site/adventures/coastal-cycling/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://concriz-sistemas.github.io/senda-site/pt-br/adventures/coastal-cycling/"/>
   </url>
   <url>
     <loc>https://concriz-sistemas.github.io/senda-site/adventures/climbing-new-zealand/</loc>
     <lastmod>2026-10-10</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://concriz-sistemas.github.io/senda-site/adventures/climbing-new-zealand/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://concriz-sistemas.github.io/senda-site/pt-br/adventures/climbing-new-zealand/"/>
   </url>
   <url>
     <loc>https://concriz-sistemas.github.io/senda-site/adventures/</loc>
     <lastmod>2026-10-10</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://concriz-sistemas.github.io/senda-site/adventures/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://concriz-sistemas.github.io/senda-site/pt-br/adventures/"/>
   </url>
   <url>
     <loc>https://concriz-sistemas.github.io/senda-site/magazine/surfing-the-cold-north/</loc>
-    <lastmod>2026-10-10</lastmod>
+    <lastmod>2026-10-12</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://concriz-sistemas.github.io/senda-site/magazine/surfing-the-cold-north/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://concriz-sistemas.github.io/senda-site/pt-br/magazine/surfing-the-cold-north/"/>
   </url>
   <url>
     <loc>https://concriz-sistemas.github.io/senda-site/magazine/ski-touring-basics/</loc>
     <lastmod>2026-10-10</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://concriz-sistemas.github.io/senda-site/magazine/ski-touring-basics/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://concriz-sistemas.github.io/senda-site/pt-br/magazine/ski-touring-basics/"/>
   </url>
   <url>
     <loc>https://concriz-sistemas.github.io/senda-site/magazine/</loc>
     <lastmod>2026-10-10</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://concriz-sistemas.github.io/senda-site/magazine/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://concriz-sistemas.github.io/senda-site/pt-br/magazine/"/>
   </url>
   <url>
     <loc>https://concriz-sistemas.github.io/senda-site/magazine/desert-camping/</loc>
     <lastmod>2026-10-10</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://concriz-sistemas.github.io/senda-site/magazine/desert-camping/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://concriz-sistemas.github.io/senda-site/pt-br/magazine/desert-camping/"/>
   </url>
   <url>
     <loc>https://concriz-sistemas.github.io/senda-site/magazine/city-skate-guide/</loc>
     <lastmod>2026-10-10</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://concriz-sistemas.github.io/senda-site/magazine/city-skate-guide/"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://concriz-sistemas.github.io/senda-site/pt-br/magazine/city-skate-guide/"/>
   </url>
 </urlset>

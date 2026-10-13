@@ -2,10 +2,22 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' https: data:; font-src 'self'; connect-src 'self'; media-src 'self' https:; frame-src https://www.youtube-nocookie.com https://www.youtube.com https://player.vimeo.com https://www.google.com https://docs.google.com https://open.spotify.com https://w.soundcloud.com; object-src 'none'; base-uri 'self'; form-action 'self'">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>FAQs | Senda</title>
   <meta name="description" content="Booking, cancellations and what is included.">
-  
+  <link rel="canonical" href="https://concriz-sistemas.github.io/senda-site/faqs/">
+  <link rel="alternate" hreflang="en" href="https://concriz-sistemas.github.io/senda-site/faqs/">
+  <link rel="alternate" hreflang="pt-BR" href="https://concriz-sistemas.github.io/senda-site/pt-br/faqs/">
+  <link rel="alternate" hreflang="x-default" href="https://concriz-sistemas.github.io/senda-site/faqs/">
+  <meta property="og:title" content="FAQs">
+  <meta property="og:description" content="Booking, cancellations and what is included.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://concriz-sistemas.github.io/senda-site/faqs/">
+  <meta property="og:site_name" content="Senda">
+  <meta property="og:locale" content="en">
+  <meta property="og:image" content="https://concriz-sistemas.github.io/senda-site/assets/img/2ce3717a7448-1600.webp">
+  <meta name="twitter:card" content="summary_large_image">
   <link rel="stylesheet" href="/senda-site/styles.css">
 <link rel="preload" href="/senda-site/assets/theme/senda/fonts/source-sans-3-latin-400-normal-78e2217793.woff2" as="font" type="font/woff2" crossorigin integrity="sha256-eOIhd5P+Rr7GzxvKurFlAz/ZS+GTWtHtoqMa2EUHO9Y=">
 <link rel="preload" href="/senda-site/assets/theme/senda/fonts/asar-latin-400-normal-a919a29f65.woff2" as="font" type="font/woff2" crossorigin integrity="sha256-qRmin2XRc4SPobIY4qWLthcHh12sigcOj6ViozFXxRE=">
@@ -31,7 +43,7 @@
 </ul>
 </nav>
 <div class="search search--compact compact" data-messages="{&quot;results&quot;:{&quot;one&quot;:&quot;{count} result&quot;,&quot;other&quot;:&quot;{count} results&quot;},&quot;noResults&quot;:&quot;Nothing found for \&quot;{query}\&quot;.&quot;,&quot;loadError&quot;:&quot;Search could not be loaded.&quot;}" data-index="/senda-site/search-index.json">
-  <form class="search__form" role="search" action="/senda-site/busca/" method="get">
+  <form class="search__form" role="search" method="get">
     <label class="visually-hidden" for="q">Search the site</label>
     <input type="search" id="q" name="q" placeholder="Search the site" autocomplete="off">
     <button type="submit" class="button">Search</button>
@@ -39,6 +51,13 @@
   <p class="search__status" role="status" aria-live="polite"></p>
   <ul class="search__results"></ul>
 </div>
+<nav class="language-switcher language-switcher--short short" aria-label="Language">
+<ul class="language-switcher__list">
+<li class="language-switcher__item"><span class="language-switcher__link" aria-current="true" lang="en" title="English">EN</span></li>
+<li class="language-switcher__item"><a class="language-switcher__link" href="/senda-site/pt-br/faqs/" lang="pt-BR" hreflang="pt-BR" title="Português">PT</a></li>
+</ul>
+</nav>
+
 </header>
 <div class="page-grid">
 <div class="region region-breadcrumb">
@@ -88,101 +107,7 @@
 </nav>
 <div class="text"><p><strong>Follow us</strong> <a href="https://www.instagram.com/">Instagram</a> <a href="https://www.facebook.com/">Facebook</a> <a href="https://x.com/">X</a></p><p>© 2026 Senda. Senda is a fictional adventure magazine, a sample site built from Google Docs and Sheets. Photos from Lorem Picsum (Unsplash).</p></div>
 </footer>
-
-<script>
-(function () {
-  var root = document.querySelector('.search');
-  if (!root) return;
-  var form = root.querySelector('.search__form');
-  var input = root.querySelector('input[type=search]');
-  var status = root.querySelector('.search__status');
-  var list = root.querySelector('.search__results');
-  var messages = JSON.parse(root.getAttribute('data-messages') || '{}');
-  var lang = document.documentElement.lang || 'en';
-  var index = null;
-
-  function fill(text, params) {
-    return String(text || '').replace(/\{(\w+)\}/g, function (whole, name) {
-      return name in params ? params[name] : whole;
-    });
-  }
-
-  function countText(n) {
-    var m = messages.results;
-    var form = typeof m === 'string' ? m : (m && (m[new Intl.PluralRules(lang).select(n)] || m.other));
-    return fill(form, { count: new Intl.NumberFormat(lang).format(n) });
-  }
-
-  form.addEventListener('submit', function (e) { e.preventDefault(); });
-
-  function normalize(s) {
-    return (s || '').toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '');
-  }
-
-  async function load() {
-    if (index) return index;
-    try {
-      var r = await fetch(root.getAttribute('data-index'));
-      index = (await r.json()).docs || [];
-    } catch (err) {
-      index = [];
-      status.textContent = messages.loadError;
-    }
-    return index;
-  }
-
-  function score(doc, terms) {
-    var title = normalize(doc.title);
-    var text = normalize(doc.text);
-    var total = 0;
-    for (var i = 0; i < terms.length; i++) {
-      var t = terms[i];
-      if (title.indexOf(t) === -1 && text.indexOf(t) === -1) return 0;
-      total += title.indexOf(t) !== -1 ? 3 : 1;
-    }
-    return total;
-  }
-
-  var timer;
-  input.addEventListener('input', function () {
-    clearTimeout(timer);
-    timer = setTimeout(search, 150);
-  });
-
-  async function search() {
-    var q = normalize(input.value).trim();
-    list.innerHTML = '';
-    if (q.length < 2) { status.textContent = ''; return; }
-
-    var docs = await load();
-    var terms = q.split(/\s+/);
-    var matches = docs
-      .map(function (d) { return { doc: d, score: score(d, terms) }; })
-      .filter(function (x) { return x.score > 0; })
-      .sort(function (a, b) { return b.score - a.score; })
-      .slice(0, 20);
-
-    status.textContent = matches.length
-      ? countText(matches.length)
-      : fill(messages.noResults, { query: input.value.trim() });
-
-    matches.forEach(function (x) {
-      var li = document.createElement('li');
-      var a = document.createElement('a');
-      a.href = x.doc.path;
-      a.textContent = x.doc.title;
-      li.appendChild(a);
-      if (x.doc.excerpt) {
-        var p = document.createElement('p');
-        p.className = 'search__summary';
-        p.textContent = x.doc.excerpt;
-        li.appendChild(p);
-      }
-      list.appendChild(li);
-    });
-  }
-})();
-</script>
 <script type="module" src="/senda-site/assets/cms/nav-a20b9305d5.js" integrity="sha256-oguTBdWJpR12yVb+5hMI4QT29GNVamVHDVSq8aw58VQ="></script>
+<script type="module" src="/senda-site/assets/cms/search-4e24e56121.js" integrity="sha256-TiTlYSG9JIjeL5Foqc20wghIUKLJLd0zT64WvijYIXk="></script>
 </body>
 </html>
